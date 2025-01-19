@@ -1,0 +1,166 @@
+/*---- Reset Margins and paddings  ----*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*--- Body ---*/
+body{
+    font-family: "Raleway", serif;
+    background-color: whitesmoke;
+    font-size:16px;
+    letter-spacing: normal;
+}
+
+h1,h2,h3,h4{
+    font-family: "Playwrite VN", serif;
+    font-weight: 300;
+}
+h1{
+    font-size: 59px;
+}
+
+a{
+    color:inherit;
+    text-decoration: none;
+}
+
+.continer{
+    float:left;
+    width:100%;
+    position:relative;
+}
+.spacer{
+    width:90%;
+    margin:0px auto;
+    display:block;
+}
+
+/*--- header ---*/
+header{
+    adding-top: 2em;
+    padding-bottom: 2em;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+header nav{
+    padding-top:1em
+}
+header nav ul{
+    display: flex;
+    gap: 2rem;
+    padding-top: 5px;
+
+    justify-content: flex-end;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    color: #fff;
+    display:block;
+    text-decoration: none;
+}
+
+/*-- banner --*/
+.banner{
+    background-color:#000;
+    height:80vh;
+    color:#fff;
+    margin-bottom: 2em;
+}
+.banner #myVideo{
+    height:80vh;
+    width:100%;
+    object-fit: cover;
+}
+.banner .titlebar{
+    width:50%;
+    position: absolute;
+    bottom:4em;
+    left:5em;
+    background-color: #0000006e;
+    padding: 3em;
+}
+.gallery section {
+    display:flex;
+    margin-bottom:2em;
+}
+.gallery section .imgbx{
+    height:50vh;
+    width:33.3%;
+    background-size: cover;
+    background-position: center;
+    position:relative;
+    background-repeat:no-repeat;
+    transition: all 0.5s ease-in-out;
+}
+.gallery section .imgbx .caption{
+    position:absolute;
+    background-color:rgba(0, 0, 0, 0.534);
+    color:#fff;
+    padding:20px;
+    bottom:0;
+    left:0;
+    width:100%;
+}
+
+.gallery section .imgbx:hover{
+    background-size:170%
+}
+
+/*--- call to action---*/
+.calltoaction{
+    background-image:url(../images/land3.jpg);
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    color: #fff;
+    height: 48vh;
+
+}
+.calltoaction::before{
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: #00000041;
+}
+
+.calltoaction .callboxes{
+    margin-top: 5em;
+    position: relative;
+    display: flex;
+    gap: 10px;
+    align-self: center;
+}
+.calltoaction .callboxes .bx{
+    align-self: center;
+}
+.calltoaction .callboxes .bx:nth-child(1){
+    width:60%;
+    font-size:36px;
+    font-family: "Playwrite VN", serif;
+    font-weight: 300;
+    line-height: 2;
+}
+.calltoaction .callboxes .bx:nth-child(2){
+    font-size:20px;
+}
+
+/*-- footer--*/
+footer{
+    padding: 1em 0;
+    display: block;
+    float: left;
+    width: 100%;
+}
+footer .copy{
+    font-size:12px;
+}
